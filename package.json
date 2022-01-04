@@ -1,0 +1,22 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Projet 3 OhMyFood OC",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aureliedev/AurelieMenin_3_20122021.git"
+  },
+  "author": "Aurelie Menin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aureliedev/AurelieMenin_3_20122021/issues"
+  },
+  "homepage": "https://github.com/aureliedev/AurelieMenin_3_20122021#readme",
+  "dependencies": {
+    "sass": "^1.45.2"
+  }
+}
