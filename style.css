@@ -34,23 +34,19 @@ main .city {
   font-size: 20px;
 }
 
-/*EXPLORER*/
 .explorer {
   text-align: center;
 }
-
 .explorer h2 {
   margin-top: 2rem;
   margin-bottom: 2rem;
   font-size: 2rem;
 }
-
 .explorer p {
   font-size: 27px;
   margin: 32px;
   color: rgba(0, 0, 0, 0.596);
 }
-
 .explorer button {
   color: white;
   font-weight: bold;
@@ -60,6 +56,30 @@ main .city {
   border: none;
   border-radius: 2rem;
   box-shadow: 2px 1px 16px -3px black;
+}
+
+.tuto {
+  padding: 2rem;
+}
+.tuto ol {
+  display: flex;
+  gap: 1rem;
+}
+@media (max-width: 800px) {
+  .tuto ol {
+    flex-direction: column;
+  }
+}
+.tuto li {
+  background-color: #f6f6f6;
+  padding: 1rem 2rem;
+  flex-grow: 1;
+  /* interdit e grossir*/
+  border-radius: 1rem;
+  box-shadow: 2px 1px 16px -3px black;
+}
+.tuto li:hover {
+  transform: scale(1.02);
 }
 
 /*# sourceMappingURL=style.css.map */

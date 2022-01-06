@@ -1,66 +1,7 @@
-/*--POLICE IMPORTÉE Logo et titres: Shrikhand----Texte: Roboto--*/
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;1,100&family=Shrikhand&display=swap');
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
+@import "./sass/base.scss";
+@import "./sass/layout/header.scss";
+@import "./sass/layout/city.scss";
+@import "./sass/layout/explorer.scss";
+@import "./sass/layout/tuto.scss";
 
-*
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; /*--bordure a l'intérieur de l'element--*/
-}
 
-body
-{
-    margin: 0px;
-    font-family: "Roboto", sans-serif;
-}
-
-header h1
-{
-    font-family: 'Shrikhand', cursive;
-    font-size: 38px;
-    position: relative;
-    text-align: center;
-    box-shadow: 0 3px 3px 0 rgba(128, 128, 128, 0.459);
-    padding: 10px 0 10px 0;
-}
-main .city
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    background-color: #f3f3f3;
-    text-align: center;
-    padding: 20px;
-    font-size: 20px;
-}
-/*EXPLORER*/
-.explorer
-{
-    text-align: center;
-}
-
-.explorer h2
-{
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    font-size: 2rem;
-}
-.explorer p
-{
-    font-size: 27px;
-    margin: 32px;
-    color: rgba(0, 0, 0, 0.596);
-}
-.explorer button
-{
-    color: white;
-    font-weight: bold;
-    font-size: 1.6rem;
-    padding: 1.3rem 2rem;
-    background-image: linear-gradient(to top,#9356DC, #FF79DA);
-    border: none;
-    border-radius: 2rem;
-    box-shadow: 2px 1px 16px -3px black;
-}

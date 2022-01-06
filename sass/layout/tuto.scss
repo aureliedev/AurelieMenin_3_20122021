@@ -1,0 +1,23 @@
+@import "../utils/zoom.scss";
+
+.tuto{
+    padding: 2rem;
+
+    & ol {
+        display: flex;
+        gap: 1rem;
+        @media (max-width: 800px) {
+            flex-direction: column;
+        }
+    }
+    & li {
+        background-color: #f6f6f6;
+        padding: 1rem 2rem;
+        flex-grow: 1; /* interdit e grossir*/
+        border-radius: 1rem;
+        @include base-shadow; 
+        &:hover {
+            @include zoom;
+        }
+    }
+}
