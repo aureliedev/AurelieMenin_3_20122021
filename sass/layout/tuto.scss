@@ -8,7 +8,10 @@
 .tuto{
     padding: 2rem;
     counter-reset: steps;
-
+    & h2 {
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+    }
     & ol {
         display: flex;
         gap: 2rem;

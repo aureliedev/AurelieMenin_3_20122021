@@ -62,6 +62,10 @@ main .city {
   padding: 2rem;
   counter-reset: steps;
 }
+.tuto h2 {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
 .tuto ol {
   display: flex;
   gap: 2rem;
@@ -102,6 +106,26 @@ main .city {
   margin-right: 1rem;
   color: #7e7e7e;
   font-size: 1.5rem;
+}
+
+.menus {
+  background-color: #f6f6f6;
+  padding: 2rem;
+}
+.menus h2 {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+.menus .menus__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.menus .card {
+  border: 1px solid black;
+  height: 4rem;
+  flex-grow: 1;
+  min-width: 10rem;
 }
 
 /*# sourceMappingURL=style.css.map */
