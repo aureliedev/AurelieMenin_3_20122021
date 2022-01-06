@@ -13,12 +13,15 @@
     }
     & li {
         background-color: #f6f6f6;
-        padding: 1rem 2rem;
+        padding: 1.5rem 2rem;
         flex-grow: 1; /* interdit e grossir*/
         border-radius: 1rem;
         @include box-shadow.base-shadow; 
         &:hover {
             @include zoom.zoom;
         }
+    }
+    & i.fas {
+        margin-right: 1rem;
     }
 }

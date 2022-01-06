@@ -72,7 +72,7 @@ main .city {
 }
 .tuto li {
   background-color: #f6f6f6;
-  padding: 1rem 2rem;
+  padding: 1.5rem 2rem;
   flex-grow: 1;
   /* interdit e grossir*/
   border-radius: 1rem;
@@ -80,6 +80,9 @@ main .city {
 }
 .tuto li:hover {
   transform: scale(1.02);
+}
+.tuto i.fas {
+  margin-right: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
