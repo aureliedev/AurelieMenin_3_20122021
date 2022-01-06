@@ -1,4 +1,5 @@
-@import "../utils/zoom.scss";
+@use "../utils/box-shadow.scss";
+@use "../utils/zoom.scss";
 
 .tuto{
     padding: 2rem;
@@ -15,9 +16,9 @@
         padding: 1rem 2rem;
         flex-grow: 1; /* interdit e grossir*/
         border-radius: 1rem;
-        @include base-shadow; 
+        @include box-shadow.base-shadow; 
         &:hover {
-            @include zoom;
+            @include zoom.zoom;
         }
     }
 }

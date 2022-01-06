@@ -1,4 +1,4 @@
-@import "../utils/box-shadow.scss";
+@use "../utils/box-shadow.scss";
 
 
 .explorer {
@@ -22,6 +22,6 @@
     border: none;
     border-radius: 2rem;
     //box-shadow: 2px 1px 16px -3px black;
-    @include base-shadow; 
+    @include box-shadow.base-shadow; 
     }
 }
