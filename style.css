@@ -14,6 +14,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+h2 {
+  padding: 2rem 0;
+}
+
 header h1 {
   font-family: "Shrikhand", cursive;
   font-size: 38px;
@@ -117,19 +121,22 @@ main .city {
   background-color: #F6F6F6;
   padding: 2rem 1rem;
 }
-.menus h2 {
-  margin: 1rem 0;
-}
 .menus .menus__cards {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
   gap: 2rem;
 }
 .menus .card {
-  border: black solid;
-  height: 15rem;
   flex-grow: 1;
   min-width: 30rem;
+}
+.menus .card img {
+  height: 12rem;
+  width: 100%;
+  border: 0 solid transparent;
+  border-radius: 1rem 1rem 0 0;
+  box-shadow: none;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=style.css.map */
