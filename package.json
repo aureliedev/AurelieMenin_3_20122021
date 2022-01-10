@@ -1,5 +1,5 @@
 {
-  "name": "OhMyFood",
+  "name": "ohmyfood",
   "version": "1.0.0",
   "description": "Projet 3 OhMyFood OC",
   "main": "index.js",
@@ -18,5 +18,6 @@
   "homepage": "https://github.com/aureliedev/AurelieMenin_3_20122021#readme",
   "dependencies": {
     "sass": "^1.45.2"
-  }
+  },
+  "devDependencies": {}
 }
