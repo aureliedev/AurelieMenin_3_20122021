@@ -1,0 +1,16 @@
+@use "./../utils/colors.scss";
+
+footer {
+    background-color: colors.$darkgrey;
+    padding: 0 1.5rem;
+    h2{
+        font-family: 'Shrikhand', cursive;
+        color: white;
+        font-weight: 500;
+        padding-bottom: 1rem;
+    }
+    ul{
+        text-decoration: none;
+        color: white;
+    }
+}
