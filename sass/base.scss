@@ -15,3 +15,7 @@ body {
 h2 {
     padding: 2rem 0;
 }
+a {
+    text-decoration: none;
+    color: inherit; // couleur hériter du parent
+}
