@@ -127,6 +127,7 @@ main .city {
   gap: 2rem;
 }
 .menus .card {
+  position: relative;
   flex-grow: 1;
   min-width: 30rem;
 }
@@ -137,6 +138,15 @@ main .city {
   border-radius: 1rem 1rem 0 0;
   box-shadow: none;
   object-fit: cover;
+}
+.menus .card .new {
+  background-color: #99e2d0;
+  color: #1b6150;
+  padding: 0.5rem;
+  border-radius: 0.125rem;
+  position: absolute;
+  top: 1rem;
+  right: 0.75rem;
 }
 
 /*# sourceMappingURL=style.css.map */
