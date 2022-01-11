@@ -269,6 +269,23 @@ main h2 {
 .menus__category {
   border: 1px red solid;
   background-color: white;
+  border-radius: 1rem;
+}
+.menus__category .menu-item {
+  display: flex;
+}
+.menus__category .menu-item .menu-item__description {
+  padding: 1rem;
+}
+.menus__category .menu-item .menu-item__price {
+  margin-left: auto;
+  font-weight: bold;
+  padding: 1rem;
+  display: flex;
+  align-items: flex-end;
+}
+.menus__category .menu-item .menu-item__check {
+  background-color: #99E2D0;
 }
 
 /*# sourceMappingURL=style.css.map */
