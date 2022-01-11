@@ -1,5 +1,5 @@
-@use "../utils/box-shadow.scss";
-@use "../utils/linear-gradient.scss";
+@use "../utils/mixins.scss";
+
 
 
 .explorer {
@@ -23,8 +23,8 @@
     border-radius: 2rem;
     transition-duration: .25s;
     //box-shadow: 2px 1px 16px -3px black;
-    @include box-shadow.base-shadow; 
-    @include linear-gradient.gradient(0.9);
+    @include mixins.base-shadow; 
+    @include mixins.gradient(0.9);
     }
     :hover {
         transform: scale(1.02);
