@@ -1,3 +1,16 @@
-img{
+@use "../utils/mixins.scss";
+
+
+img {
     max-width: 100%;
 }
+main{
+    position: relative;
+}
+main h2 {
+    font-family: "Shrikhand", cursive;    
+}
+
+main{
+    @include mixins.heart-animated;
+} 
