@@ -1,16 +1,45 @@
 @use "../utils/mixins.scss";
+@use "../utils/colors.scss";
 
-
-img {
+.banner img {
+    display: block;
     max-width: 100%;
-}
-main{
-    position: relative;
-}
-main h2 {
-    font-family: "Shrikhand", cursive;    
+    max-height: 32rem;
+    width: 100%;
+    object-fit: cover;
 }
 
-main{
+main { 
+    position: relative;
     @include mixins.heart-animated;
-} 
+    
+    .header {
+        margin-top: -4rem;
+        border-radius: 2rem 2rem 0 0;
+        background-color: colors.$lightergrey;
+        z-index: 1;
+        position: relative;
+    }
+    h2 {
+    font-family: "Shrikhand", cursive; 
+    padding: 2rem;   
+    }
+}
+.grid {
+    background-color: colors.$lightergrey;
+    padding: 1rem;
+    
+}
+.menus {
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    @media (max-width: 1000px){
+        grid-template-columns: 1fr;
+    }  
+}
+.menus__category {
+    border: 1px red solid;
+    background-color: white;
+}

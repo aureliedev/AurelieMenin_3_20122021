@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,20 +9,39 @@
     <script src="https://kit.fontawesome.com/d5b1979bb6.js" crossorigin="anonymous"></script>
     <title>La palette du goût</title>
 </head>
+
 <body>
     <header>
         <h1>ohmyfood</h1>
     </header>
-    <img src="../assets/img/la-palette-du-gout.jpg" alt="La palette du goût">
-    <main>  
-        <h2>La palette du goût</h2>
-        <i class="far fa-heart"></i>
-        <i class="fas fa-heart"></i>
+    <div class="banner">
+        <img src="../assets/img/la-palette-du-gout.jpg" alt="La palette du goût">
+    </div>
+    <main class="container__main">
+        <div class="header">
+            <h2>La palette du goût</h2>
+            <i class="far fa-heart"></i>
+            <i class="fas fa-heart"></i>
+        </div>
+        <div class="grid">
+            <section class="menus">
+                <div class="menus__category">
+                    <h3>ENTRÉES</h3>
+                    <div class="menu-item">
+                        <h4>Fricassée d'escargots</h4>
+                        <p>Au piment d'espelette</p>
+                        <p class="prix">25€</p>
+                    </div>
+                </div>
+                <div class="menus__category">Groupe2</div>
+                <div class="menus__category">Groupe3</div>
+            </section>
+        </div>
     </main>
     <footer>
         <h2>ohmyfood</h2>
         <ul>
-            <li> 
+            <li>
                 <i class="fas fa-utensils"></i>
                 Proposer un restaurant
             </li>
@@ -35,6 +55,7 @@
             </li>
         </ul>
     </footer>
-    
+
 </body>
+
 </html>

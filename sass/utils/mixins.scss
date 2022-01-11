@@ -9,22 +9,22 @@
 }
 @mixin heart-animated {
     i {
-        font-size: 2rem;
-        position: absolute;
-        right: 1rem;
-        top: 50%;
-        transform: translateY(-50%);
+    font-size: 2rem;
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.fas { // transition sur les coeurs avec opacity+ ajout de mixin
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    opacity: 0;
+    transition: 200ms;
+    @include gradient(1);
+    &:hover {
+        opacity: 1;
+        transform: translateY(-50%) scale(1.2);
     }
-    .fas { // transition sur les coeurs avec opacity+ ajout de mixin
-        color: transparent;
-        background-clip: text;
-        -webkit-background-clip: text;
-        opacity: 0;
-        transition: 200ms;
-        @include gradient(1);
-        &:hover {
-            opacity: 1;
-            transform: translateY(-50%) scale(1.2);
-        }
-    }
+}
 }
