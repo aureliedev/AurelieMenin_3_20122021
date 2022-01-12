@@ -25,7 +25,7 @@
     }
 } 
 .resto{
-    padding: 0 2rem;
+    padding: 0 1rem;
     background-color: colors.$lightergrey;
     
 }
@@ -33,11 +33,24 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     background: colors.$lightergrey;
-    gap: 1rem;
     @media (max-width: variables.$breakpoint) {
         grid-template-columns: 1fr;
     }
-    
+    h3 {
+        position: relative;
+        text-transform: uppercase;
+        font-weight: 400;
+        margin: 1rem;
+        &::after { // pseudo elements CSS pour souligne entrées, plat, desserts
+            content: "";
+            position: absolute;
+            top: 1.5rem;
+            left: 0;
+            height: 0.25rem;
+            width: 3rem;
+            background-color: colors.$color-tertiary;
+        }
+    }
     .menu-category {
         
         overflow: hidden; // ne montre pas ce qui n'est pas dans la section
