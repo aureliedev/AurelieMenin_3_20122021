@@ -242,12 +242,18 @@ footer i {
   object-fit: cover;
 }
 
-main h2 {
+.container__main {
+  position: relative;
+  margin-top: -2rem;
+  border-radius: 2rem 2rem 0 0;
+  background-color: white;
+}
+.container__main h2 {
   position: relative;
   font-family: "Shrikhand", cursive;
-  padding: 2rem;
+  margin: 0 2rem 0 2rem;
 }
-main h2::before {
+.container__main h2::before {
   display: inline-block;
   font-style: normal;
   font-variant: normal;
@@ -267,7 +273,7 @@ main h2::before {
   opacity: 1;
   transition: 200ms;
 }
-main h2::after {
+.container__main h2::after {
   display: inline-block;
   font-style: normal;
   font-variant: normal;
@@ -288,9 +294,28 @@ main h2::after {
   transition: 200ms;
   background-image: linear-gradient(to top, #9356dc, #ff79da);
 }
-main h2:hover::after {
+.container__main h2:hover::after {
   opacity: 1;
   transform: translateY(-50%) scale(1.2);
+}
+
+.resto {
+  padding: 0 2rem;
+}
+
+.menus-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background: yellow;
+  gap: 1rem;
+}
+@media (max-width: 1000px) {
+  .menus-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.menus-grid > * {
+  border: 1px solid red;
 }
 
 /*# sourceMappingURL=style.css.map */

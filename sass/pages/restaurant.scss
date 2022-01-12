@@ -1,18 +1,42 @@
 @use "../utils/mixins.scss";
 @use "../utils/colors.scss";
+@use "../utils/variables.scss";
 
 .banner img {
-    display: block;
+    display: block;// pr que l'image ne fasse pas de marge  avec la section du dessous 
     max-width: 100%;
     max-height: 32rem;
     width: 100%;
     object-fit: cover;
 }
 
-main h2 { 
+.container__main {
+    position: relative;
+    margin-top: -2rem;
+    border-radius: 2rem 2rem 0 0;
+    background-color: white;
+    h2 { 
         position: relative;
         font-family: "Shrikhand", cursive; 
-        padding: 2rem;
+        margin: 0 2rem 0 2rem;
         @include mixins.heart-anime;
+    }
+} 
+.resto{
+    padding: 0 2rem;
+    
 }
+.menus-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background: yellow;
+    gap: 1rem;
+    @media (max-width: variables.$breakpoint) {
+        grid-template-columns: 1fr;
+    }
+    & > * {
+        border: 1px solid red;
+    }
+}
+
 
