@@ -1,7 +1,7 @@
 @mixin gradient($opacity: 0.9) { // gradient pr button et coeur.*opacity:0.9 valeur par default
     background-image: linear-gradient(to top, rgba(147,86,220,$opacity),rgba(255,121,218,$opacity));
 }    
-@mixin base-shadow {
+@mixin box-shadow {
     box-shadow: 2px 1px 16px -3px black;
 }
 @mixin zoom {

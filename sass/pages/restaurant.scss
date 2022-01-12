@@ -40,15 +40,18 @@ main {
     }  
 }
 .menus__category {
-    border: 1px red solid;
     background-color: white;
-    border-radius: 1rem;
+    
     
     .menu-item {
         display: flex;
-        
+        overflow: hidden; // non visible en dehors de la div
+        border-radius: 1rem;
+        @include mixins.box-shadow;
+
         .menu-item__description {
             padding: 1rem;
+            
         }
         .menu-item__price {
             margin-left: auto;
@@ -58,7 +61,16 @@ main {
             align-items: flex-end;
         }
         .menu-item__check {
+            $button-width: 4rem; //variable créer dans l'element en local
+            border-radius: 0 1rem 1rem 0;
             background-color: colors.$color-tertiary;
+            margin-right: -4rem;
+            width: $button-width; 
+            transition: margin-right 0.5s;
+            
         }
+        &:hover .menu-item__check {
+            margin-right: 0;
+        } 
     }
 }

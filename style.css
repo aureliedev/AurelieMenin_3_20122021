@@ -267,12 +267,13 @@ main h2 {
 }
 
 .menus__category {
-  border: 1px red solid;
   background-color: white;
-  border-radius: 1rem;
 }
 .menus__category .menu-item {
   display: flex;
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 2px 1px 16px -3px black;
 }
 .menus__category .menu-item .menu-item__description {
   padding: 1rem;
@@ -285,7 +286,14 @@ main h2 {
   align-items: flex-end;
 }
 .menus__category .menu-item .menu-item__check {
+  border-radius: 0 1rem 1rem 0;
   background-color: #99E2D0;
+  margin-right: -4rem;
+  width: 4rem;
+  transition: margin-right 0.5s;
+}
+.menus__category .menu-item:hover .menu-item__check {
+  margin-right: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
