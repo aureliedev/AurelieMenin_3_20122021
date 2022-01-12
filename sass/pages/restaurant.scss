@@ -11,7 +11,7 @@
 
 main { 
     position: relative;
-    @include mixins.heart-animated;
+    //@include mixins.heart-animated;
     
     .header {
         margin-top: -4rem;
