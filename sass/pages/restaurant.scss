@@ -1,6 +1,8 @@
 @use "../utils/mixins.scss";
 @use "../utils/colors.scss";
 @use "../utils/variables.scss";
+@use "../utils/animations.scss";
+
 
 .banner img {
     display: block;// pr que l'image ne fasse pas de marge  avec la section du dessous 
@@ -35,17 +37,30 @@
     @media (max-width: variables.$breakpoint) {
         grid-template-columns: 1fr;
     }
+    
     .menu-category {
-        border: 1px solid red;
-        background-color: white;
-        border-radius: 1rem;
+        
+        overflow: hidden; // ne montre pas ce qui n'est pas dans la section
+        
         .menu-item {
             display: flex;
-            
+            border-radius: 1rem; 
+            background-color: white;
+            overflow: hidden; // ne montre pas ce qui n'est pas dans la section
+            margin: 0.5rem;
+            @include mixins.box-shadow;
+
             .menu-item-description {
-                padding: 1rem;
-            }
+            padding: 1rem;
+            overflow: hidden; // ne montre pas ce qui n'est pas dans la section
             
+            h4, p {
+                overflow: hidden; // ne montre pas ce qui n'est pas dans la section
+                white-space: nowrap; // force le texte a rester sur la meme ligne
+                text-overflow: ellipsis; //faire apparaitre les 3points ...
+            }
+    }
+
             .price {
                 display: flex; // pr mettre le prix aligné sur la ligne
                 align-items: flex-end;
@@ -54,10 +69,33 @@
                 padding: 1rem;
             }
             .menu-item-check {
+                display: grid;
+                place-items: center;
+                flex-shrink: 0;//ne pas se rapetisser en reduisant la fenetre
+                $button-width: 4rem;//variable locale
+                border-radius: 0 1rem 1rem 0;
                 background-color: colors.$color-tertiary;
+                margin-right: -$button-width;
+                width: $button-width;
+                transition: margin-right 0.5s;
+                i {
+                    display: grid;
+                    place-items: center;
+                    background: white;
+                    aspect-ratio: 1;
+                    width: 2rem;
+                    border-radius: 1rem;
+                    color: colors.$color-tertiary;
+                }
             }
-            & > * {
-                border: 1px solid red;
+            &:hover {
+                .menu-item-check {
+                margin-right: 0;
+                }
+                i {
+                    @include animations.checkspin;
+                    animation: checkspin 0.5s ease-in-out;
+                }
             }
         }
     }
