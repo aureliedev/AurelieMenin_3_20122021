@@ -9,68 +9,10 @@
     object-fit: cover;
 }
 
-main { 
-    position: relative;
-    //@include mixins.heart-animated;
-    
-    .header {
-        margin-top: -4rem;
-        border-radius: 2rem 2rem 0 0;
-        background-color: colors.$lightergrey;
-        z-index: 1;
+main h2 { 
         position: relative;
-    }
-    h2 {
-    font-family: "Shrikhand", cursive; 
-    padding: 2rem;   
-    }
+        font-family: "Shrikhand", cursive; 
+        padding: 2rem;
+        @include mixins.heart-anime;
 }
-.grid {
-    background-color: colors.$lightergrey;
-    padding: 1rem;
-    
-}
-.menus {
-    
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-    @media (max-width: 1000px){
-        grid-template-columns: 1fr;
-    }  
-}
-.menus__category {
-    background-color: white;
-    
-    
-    .menu-item {
-        display: flex;
-        overflow: hidden; // non visible en dehors de la div
-        border-radius: 1rem;
-        @include mixins.box-shadow;
 
-        .menu-item__description {
-            padding: 1rem;
-            
-        }
-        .menu-item__price {
-            margin-left: auto;
-            font-weight: bold;
-            padding: 1rem;
-            display: flex;
-            align-items: flex-end;
-        }
-        .menu-item__check {
-            $button-width: 4rem; //variable créer dans l'element en local
-            border-radius: 0 1rem 1rem 0;
-            background-color: colors.$color-tertiary;
-            margin-right: -4rem;
-            width: $button-width; 
-            transition: margin-right 0.5s;
-            
-        }
-        &:hover .menu-item__check {
-            margin-right: 0;
-        } 
-    }
-}
