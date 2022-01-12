@@ -375,6 +375,9 @@ footer i {
   border-radius: 1rem;
   color: #99E2D0;
 }
+.menus-grid .menu-category .menu-item:hover {
+  cursor: pointer;
+}
 .menus-grid .menu-category .menu-item:hover .menu-item-check {
   margin-right: 0;
 }
