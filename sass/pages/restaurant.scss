@@ -14,7 +14,7 @@
     position: relative;
     margin-top: -2rem;
     border-radius: 2rem 2rem 0 0;
-    background-color: white;
+    background-color: colors.$lightergrey;
     h2 { 
         position: relative;
         font-family: "Shrikhand", cursive; 
@@ -24,18 +24,42 @@
 } 
 .resto{
     padding: 0 2rem;
+    background-color: colors.$lightergrey;
     
 }
 .menus-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    background: yellow;
+    background: colors.$lightergrey;
     gap: 1rem;
     @media (max-width: variables.$breakpoint) {
         grid-template-columns: 1fr;
     }
-    & > * {
+    .menu-category {
         border: 1px solid red;
+        background-color: white;
+        border-radius: 1rem;
+        .menu-item {
+            display: flex;
+            
+            .menu-item-description {
+                padding: 1rem;
+            }
+            
+            .price {
+                display: flex; // pr mettre le prix aligné sur la ligne
+                align-items: flex-end;
+                margin-left: auto;
+                font-weight: bold;
+                padding: 1rem;
+            }
+            .menu-item-check {
+                background-color: colors.$color-tertiary;
+            }
+            & > * {
+                border: 1px solid red;
+            }
+        }
     }
 }
 

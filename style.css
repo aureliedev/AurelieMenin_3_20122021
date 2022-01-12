@@ -246,7 +246,7 @@ footer i {
   position: relative;
   margin-top: -2rem;
   border-radius: 2rem 2rem 0 0;
-  background-color: white;
+  background-color: #f6f6f6;
 }
 .container__main h2 {
   position: relative;
@@ -301,12 +301,13 @@ footer i {
 
 .resto {
   padding: 0 2rem;
+  background-color: #f6f6f6;
 }
 
 .menus-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  background: yellow;
+  background: #f6f6f6;
   gap: 1rem;
 }
 @media (max-width: 1000px) {
@@ -314,7 +315,28 @@ footer i {
     grid-template-columns: 1fr;
   }
 }
-.menus-grid > * {
+.menus-grid .menu-category {
+  border: 1px solid red;
+  background-color: white;
+  border-radius: 1rem;
+}
+.menus-grid .menu-category .menu-item {
+  display: flex;
+}
+.menus-grid .menu-category .menu-item .menu-item-description {
+  padding: 1rem;
+}
+.menus-grid .menu-category .menu-item .price {
+  display: flex;
+  align-items: flex-end;
+  margin-left: auto;
+  font-weight: bold;
+  padding: 1rem;
+}
+.menus-grid .menu-category .menu-item .menu-item-check {
+  background-color: #99E2D0;
+}
+.menus-grid .menu-category .menu-item > * {
   border: 1px solid red;
 }
 
