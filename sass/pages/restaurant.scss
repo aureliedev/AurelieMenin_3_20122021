@@ -113,6 +113,17 @@
             }
         }
     }
+    
 }
+.order {
+    height: 30vh;
+    background-color: colors.$lightergrey;
+    display: grid;
+    place-items: center;
+    button {
+        @include mixins.base-button;
+    }
+}
+
 
 
