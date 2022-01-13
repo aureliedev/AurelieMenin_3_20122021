@@ -43,6 +43,25 @@ main .city {
   font-size: 20px;
 }
 
+.loader {
+  background-color: red;
+  position: fixed;
+  height: 100vh;
+  inset: 0;
+  z-index: 1;
+  background-color: #fff;
+  opacity: 0.9;
+  transform-origin: top;
+}
+
+@keyframes disappear {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
 .explorer {
   text-align: center;
 }
