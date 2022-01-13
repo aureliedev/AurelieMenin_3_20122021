@@ -3,7 +3,15 @@
 @use "../utils/variables.scss";
 @use "../utils/animations.scss";
 
-
+header::before {
+    @include mixins.back-arrow($font-weight: 900);// taille de l'argument 
+    content: "\f060"; // unicode fontsome avec pseudo-éléments
+    left: 1rem;
+    top: 4.5%;
+    font-size: 20px;
+    cursor: pointer;
+   
+}
 .banner img {
     display: block;// pr que l'image ne fasse pas de marge  avec la section du dessous 
     max-width: 100%;
