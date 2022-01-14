@@ -46,13 +46,13 @@
 .explorer {
     text-align: center;
     background-color: #F6F6F6;
-    padding-bottom: 2rem;
+    padding-bottom: 4rem;
     & h2 {
     font-size: 2rem;
     }
     & p {
     font-size: 27px;
-    margin: 32px;
+    padding: 0 0 3rem 0;
     color: rgba(0, 0, 0, 0.596);
     }
     & button {

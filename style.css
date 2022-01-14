@@ -86,14 +86,14 @@ main .city {
 .explorer {
   text-align: center;
   background-color: #F6F6F6;
-  padding-bottom: 2rem;
+  padding-bottom: 4rem;
 }
 .explorer h2 {
   font-size: 2rem;
 }
 .explorer p {
   font-size: 27px;
-  margin: 32px;
+  padding: 0 0 3rem 0;
   color: rgba(0, 0, 0, 0.596);
 }
 .explorer button {
@@ -133,6 +133,8 @@ main .city {
 }
 .tuto li {
   position: relative;
+  display: flex;
+  align-items: center;
   list-style-type: none;
   background-color: #f6f6f6;
   padding: 1.5rem 2rem;
@@ -157,6 +159,10 @@ main .city {
 }
 .tuto li:hover {
   transform: scale(1.02);
+  background-color: #f2eafb;
+}
+.tuto li:hover i::before {
+  color: #9356dc;
 }
 .tuto i.fas {
   margin-right: 1rem;

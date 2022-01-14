@@ -20,6 +20,8 @@
     }
     & li {
         position: relative;
+        display: flex;
+        align-items: center;
         &::before {
             content: counter(steps);
             counter-increment: steps;
@@ -42,6 +44,10 @@
         @include mixins.box-shadow; 
         &:hover {
             @include mixins.zoom;
+            background-color: lighten(colors.$purple, 35%);//lighten fonction sass pour eclaircir la couleur
+            i::before {
+                color: colors.$purple;
+            }
         }
     }
     & i.fas {
