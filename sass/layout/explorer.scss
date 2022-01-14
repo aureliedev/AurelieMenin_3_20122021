@@ -1,22 +1,49 @@
 @use "../utils/mixins.scss";
+@use "../utils/colors.scss";
 
 .loader {
-    background-color: red;
+    
+    display: grid;
+    place-items: center;
     position: fixed;
     height: 100vh;//vh=hauteur du viewport 100vh= taille complete de l'écran
     inset: 0;
     z-index: 1;//pr recouvrir l'écran
     background-color: #fff;
     opacity: 0.9;
-    //animation: disappear 1s forwards;//une fois l'animation terminé, il disparait
-    transform-origin: top;
+    animation: loader 500ms;
+    animation-fill-mode: forwards;// forwardss:cible retiendra les valeurs calculées définies lors de la dernière étape (keyframe)
+    animation-delay: 3s;
+    //border-radius: 50%;
+    
+    &::after {
+        content: "";
+        height: 100px;
+        width:100px;
+        border: 10px solid transparent;
+        border-top: 10px solid colors.$purple;
+        border-bottom: 10px solid colors.$color-tertiary;
+        border-radius: 50%;
+        animation: spin 3s infinite linear;
+        
+       
+    }
+   
 }
-@keyframes disappear {
+@keyframes loader {
     0% {
         transform: scale(1);
     }
     100% {
         transform: scale(0);
+    }
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
     }
 }
 
