@@ -104,7 +104,8 @@ header::before {
                     display: grid;
                     place-items: center;
                     background: white;
-                    aspect-ratio: 1;
+                    //aspect-ratio: 1;
+                    height: 2rem;
                     width: 2rem;
                     border-radius: 1rem;
                     color: colors.$color-tertiary;
@@ -131,6 +132,7 @@ header::before {
     place-items: center;
     button {
         @include mixins.base-button;
+        font-size: 1rem;
     }
 }
 

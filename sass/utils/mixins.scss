@@ -33,6 +33,7 @@
     -webkit-background-clip: text;
     opacity: $opacity;
     transition: 200ms;
+    cursor: pointer;
 }
 @mixin heart-anime {
     &::before { // HEART css pseudo elements fontasome
