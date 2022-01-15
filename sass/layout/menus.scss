@@ -3,14 +3,11 @@
 .menus {
     background-color: #F6F6F6;
     padding: 2rem 1rem;
-
-
-
-    .menus__cards {
+    
+    .menu__cards {
+        gap: 2rem;
         display: grid;
         grid-template-columns: repeat(1,1fr);
-        gap: 2rem;
-        
     }
     
     .card {

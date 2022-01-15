@@ -13,7 +13,6 @@
     animation: loader 500ms;
     animation-fill-mode: forwards;// forwardss:cible retiendra les valeurs calculées définies lors de la dernière étape (keyframe)
     animation-delay: 3s;
-    //border-radius: 50%;
     
     &::after {
         content: "";
