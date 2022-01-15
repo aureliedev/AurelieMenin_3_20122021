@@ -174,10 +174,10 @@ main .city {
   background-color: #F6F6F6;
   padding: 2rem 1rem;
 }
-.menus .menu__cards {
+.menus .menus__cards {
   gap: 2rem;
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  display: flex;
+  flex-wrap: wrap;
 }
 .menus .card {
   position: relative;
@@ -382,23 +382,24 @@ header::before {
   background-color: #f6f6f6;
 }
 
-.menus-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+.menu-grid {
   background: #f6f6f6;
 }
-@media (max-width: 1000px) {
-  .menus-grid {
-    grid-template-columns: 1fr;
+.menu-grid .menu-grid__bloc {
+  display: grid;
+}
+@media (min-width: 1000px) {
+  .menu-grid .menu-grid__bloc {
+    padding: 0 15rem;
   }
 }
-.menus-grid h3 {
+.menu-grid h3 {
   position: relative;
   text-transform: uppercase;
   font-weight: 400;
   margin: 1rem;
 }
-.menus-grid h3::after {
+.menu-grid h3::after {
   content: "";
   position: absolute;
   top: 1.5rem;
@@ -407,10 +408,10 @@ header::before {
   width: 3rem;
   background-color: #99E2D0;
 }
-.menus-grid .menu-category {
+.menu-grid .menu-category {
   overflow: hidden;
 }
-.menus-grid .menu-category .menu-item {
+.menu-grid .menu-category .menu-item {
   display: flex;
   border-radius: 1rem;
   background-color: white;
@@ -419,23 +420,23 @@ header::before {
   box-shadow: 0px 0px 13px -4px #7e7e7e;
   animation: appear 1s;
 }
-.menus-grid .menu-category .menu-item .menu-item-description {
+.menu-grid .menu-category .menu-item .menu-item-description {
   padding: 1rem;
   overflow: hidden;
 }
-.menus-grid .menu-category .menu-item .menu-item-description h4, .menus-grid .menu-category .menu-item .menu-item-description p {
+.menu-grid .menu-category .menu-item .menu-item-description h4, .menu-grid .menu-category .menu-item .menu-item-description p {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.menus-grid .menu-category .menu-item .price {
+.menu-grid .menu-category .menu-item .price {
   display: flex;
   align-items: flex-end;
   margin-left: auto;
   font-weight: bold;
   padding: 1rem;
 }
-.menus-grid .menu-category .menu-item .menu-item-check {
+.menu-grid .menu-category .menu-item .menu-item-check {
   display: grid;
   place-items: center;
   flex-shrink: 0;
@@ -445,7 +446,7 @@ header::before {
   width: 4rem;
   transition: margin-right 0.5s;
 }
-.menus-grid .menu-category .menu-item .menu-item-check i {
+.menu-grid .menu-category .menu-item .menu-item-check i {
   display: grid;
   place-items: center;
   background: white;
@@ -454,13 +455,13 @@ header::before {
   border-radius: 1rem;
   color: #99E2D0;
 }
-.menus-grid .menu-category .menu-item:hover {
+.menu-grid .menu-category .menu-item:hover {
   cursor: pointer;
 }
-.menus-grid .menu-category .menu-item:hover .menu-item-check {
+.menu-grid .menu-category .menu-item:hover .menu-item-check {
   margin-right: 0;
 }
-.menus-grid .menu-category .menu-item:hover i {
+.menu-grid .menu-category .menu-item:hover i {
   animation: checkspin 0.5s ease-in-out;
 }
 @keyframes checkspin {

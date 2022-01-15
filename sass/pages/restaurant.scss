@@ -37,13 +37,16 @@ header::before {
     background-color: colors.$lightergrey;
     
 }
-.menus-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+.menu-grid {
     background: colors.$lightergrey;
-    @media (max-width: variables.$breakpoint) {
-        grid-template-columns: 1fr;
+    .menu-grid__bloc {
+        display: grid;
+        @media (min-width: variables.$breakpoint){
+            padding: 0 15rem;
+        }
     }
+    
+
     h3 {
         position: relative;
         text-transform: uppercase;
