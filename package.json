@@ -4,7 +4,8 @@
   "description": "Projet 3 OhMyFood OC",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch style.scss style.css"
+    "sass": "sass --watch style.scss style.css",
+    "build": "postcss style.css -o ./build/style.min.css"
   },
   "repository": {
     "type": "git",
@@ -17,7 +18,11 @@
   },
   "homepage": "https://github.com/aureliedev/AurelieMenin_3_20122021#readme",
   "dependencies": {
+    "autoprefixer": "^10.4.2",
     "sass": "^1.45.2"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "postcss": "^8.4.5",
+    "postcss-cli": "^9.1.0"
+  }
 }
