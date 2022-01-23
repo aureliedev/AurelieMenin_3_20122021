@@ -3,7 +3,7 @@
 @use "../utils/variables.scss";
 @use "../utils/animations.scss";
 
-header::before {
+a header::before {
     @include mixins.back-arrow($font-weight: 900);// taille de l'argument 
     content: "\f060"; // unicode fontsome avec pseudo-éléments
     left: 1rem;

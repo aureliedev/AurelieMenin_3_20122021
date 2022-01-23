@@ -294,7 +294,7 @@ footer i {
     opacity: 1;
   }
 }
-header::before {
+a header::before {
   position: absolute;
   display: inline-block;
   font-style: normal;
