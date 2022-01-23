@@ -175,9 +175,15 @@ main .city {
   padding: 2rem 1rem;
 }
 .menus .menus__cards {
-  gap: 2rem;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  column-gap: 2rem;
+  row-gap: 2rem;
+}
+@media (min-width: 1000px) {
+  .menus .menus__cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 .menus .card {
   position: relative;
