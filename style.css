@@ -172,7 +172,7 @@ main .city {
 
 .menus {
   background-color: #F6F6F6;
-  padding: 2rem 1rem;
+  padding: 2rem 2rem;
 }
 .menus .menus__cards {
   display: grid;
