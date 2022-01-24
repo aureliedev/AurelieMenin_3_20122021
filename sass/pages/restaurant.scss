@@ -73,7 +73,7 @@ a header::before {
             overflow: hidden; // ne montre pas ce qui n'est pas dans la section
             margin: 0.5rem;
             @include mixins.box-shadow;
-            animation: appear 1s;// apparition des cartes restau dans animations.scss $keyframes appear (appararition) ligne11
+            animation: appear 2s;// apparition des cartes restau dans animations.scss $keyframes appear (appararition) ligne11
 
             .menu-item-description {
             padding: 1rem;
